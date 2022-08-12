@@ -74,7 +74,14 @@ main() {
         
     # Clone the main repo at a specific version
     echo "Using obsidian-zola version: v1.3.1"
-    git clone https://github.com/ppeetteerrs/obsidian-zola.git --branch v1.3.1 __site
+    if [ -z OBSIDIAN_ZOLA_GH ]; 
+    then
+    	git clone https://github.com/hackedXD/obsidian-zola.git --branch v1.3.1 __site
+    else
+    	else git clone $OBSIDIAN_ZOLA_GH --branch v1.3.1 __site
+    fi
+    
+	
     # Move the netlify.toml into that directory
     if [ ! -f __obsidian/netlify.toml ]; then
     	echo "No netlify.toml. Exiting"
