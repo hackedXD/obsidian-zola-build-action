@@ -78,7 +78,7 @@ main() {
     then
     	git clone https://github.com/hackedXD/obsidian-zola.git --branch v1.3.1 __site
     else
-    	else git clone $OBSIDIAN_ZOLA_GH --branch v1.3.1 __site
+    	git clone $OBSIDIAN_ZOLA_GH --branch v1.3.1 __site
     fi
     
 	
