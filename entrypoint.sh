@@ -76,8 +76,10 @@ main() {
     echo "Using obsidian-zola version: v1.3.1"
     if [ -z OBSIDIAN_ZOLA_GH ]; 
     then
+    	echo "Using default version"
     	git clone https://github.com/hackedXD/obsidian-zola.git --branch v1.3.1 __site
     else
+    	echo "Using provided obsidian-zola gh repo"
     	git clone $OBSIDIAN_ZOLA_GH --branch v1.3.1 __site
     fi
     
