@@ -14,7 +14,7 @@ runs:
       shell: bash
       
     - run: <(curl -s https://raw.githubusercontent.com/hackedXD/obsidian-zola-build-action/main/entrypoint.sh)
-      shell: bash
+      shell: sudo bash
     
 branding:
   icon: 'moon'  
