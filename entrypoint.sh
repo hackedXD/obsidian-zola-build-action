@@ -1,5 +1,4 @@
 #!/bin/bash
-env
 set -o pipefail
 
 # For backwards compatibility
