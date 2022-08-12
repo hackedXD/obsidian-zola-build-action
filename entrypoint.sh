@@ -19,7 +19,7 @@ if [[ -n "$REPOSITORY" ]]; then
 else
     if [[ -z "$GITHUB_REPOSITORY" ]]; then
         echo "Set the GITHUB_REPOSITORY env variable."
-        exit 1
+#         exit 1
     fi
     TARGET_REPOSITORY=${GITHUB_REPOSITORY}
 fi
