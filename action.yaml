@@ -16,7 +16,7 @@ runs:
     - run: curl -s https://raw.githubusercontent.com/hackedXD/obsidian-zola-build-action/main/entrypoint.sh -o obs-zola.sh && chmod +x obs-zola.sh
       shell: bash
       
-    - run: sudo ./obs-zola.sh
+    - run: sudo -E ./obs-zola.sh
       shell: bash
     
 branding:
